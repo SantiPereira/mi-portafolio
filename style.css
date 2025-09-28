@@ -156,11 +156,11 @@ h2{
     font-family: 'Forum', serif ; 
     margin-bottom: -15px ;
 }
+
     /* ESTILO DEL HEADER */
 header p{
     margin: 15px 0 ;
 }
-
 .section-box{
 
     /* border: 2px solid black ; */
@@ -298,14 +298,101 @@ header p{
 
     .tecnologias:hover {
         transform: scale(1.09) ;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        filter: brightness(1.3);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2) ;
+        filter: brightness(1.3) ;
     }
 
+    /* ESTILOS PARA EL SECTION MINI-PROYECTOS */
+h3{
+    font-size: 25px ;
+    margin-top: 30px ;
+
+    display: flex ;
+    justify-content: center ;
+}
+
+.mini-proyectos {
+    display: flex ;
+    gap: 20px ;
+    flex-wrap: wrap ;
+    justify-content: center ;
+    margin-top: 10px ;
+}
+
+.tarjeta-mini-proyecto{
+    width: 210px;
+
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1); 
+    background: black ;
+}
+
+.tarjeta-mini-proyecto a{
+    text-decoration: none ;
+    
+    width: 100% ;
+    height: 210px  ;
+
+    display: block ;
+}
+
+.tarjeta-mini-proyecto a img {
+    /* height: 260px ; */
+    height: 100%  ;
+    /* width: 210px ; */
+        width: 100% ;
+
+    display: block ;
+    object-fit: cover ;
+    
+}
+
+.footer-tarjeta-mini-proyecto{
+    background: black ;
+
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+
+    gap: 15px ;
+    height: 40px;
+    padding: 0 ;;
+}
+
+
+.footer-tarjeta-mini-proyecto a{
+    text-align: none ;
+    background: black ;
+    
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    
+    width: auto ;
+    height: auto ;
+}
+
+    .footer-tarjeta-mini-proyecto a:hover{
+        transform: scale(1.09) ;
+        border-radius: 360px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+.footer-tarjeta-mini-proyecto a img {
+    background: black ;
+    height: 25px;
+    width: auto ;
+
+    display: block ;
+}
 
 
     /* ESTILO DEL FOOTER */
-footer{
+.footer{
     /* background: red ; */
     /* border: 2px solid black ;  */
 
@@ -321,14 +408,14 @@ footer{
 
 }
 
-footer section{
+.footer section{
     flex: 1 ;
     height: 100% ;
     width:100% ;
 
 }
 
-footer section a{
+.footer section a{
     text-decoration: none ;
 }
 
@@ -368,3 +455,13 @@ footer section a{
     display:inline-block ; 
 
 }
+
+    .footer-der a img:hover {
+        transform: scale(1.09) ;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        filter: brightness(1.3);
+        background: white ;
+        border-radius: 20% ;
+    }
+
+
