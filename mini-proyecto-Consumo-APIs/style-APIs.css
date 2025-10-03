@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    /* background: #1f192f ; */
+    background: #172c3c ;
+}
+
+h1{
+    color: white ;
+
+    display: flex ;
+    justify-content: center ;
+
+    font-size: 58px;
+    font-family: "Roboto Condensed", sans-serif;;
+
+    user-select: none ;
+}
+
+.barra-de-busqueda{
+    display: block ;
+
+    margin: 20px auto ;
+    padding: 10px 15px ;
+    width: 60% ;
+
+    background: #c0c0c0;
+    /* background: white ; */
+    color: #232226 ;
+
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
+    /* font-family: "Courier New", monospace; */
+
+    /* border: 5px solid #132029 ; */
+    box-shadow: inset -2px -2px 0 #e0e0e0, /* relieve claro arriba-izq */
+                inset  2px  2px 0 #000;    /* relieve oscuro abajo-der */
+    /* box-shadow: 4px 4px 0px #00000062 ; */
+}
+
+    .barra-de-busqueda::placeholder{
+        /* color: #536d88 ;  */
+        font-style: italic ;
+        color: #555 ; 
+    }
+
+    .barra-de-busqueda:focus {
+        outline: none;
+        background: #fff;           
+    }
+
+.boton-de-busqueda{
+    display: block ;
+
+    margin: 30px auto ;
+    height: 6vh;
+    width: 13vw ;
+
+    background: #c0c0c0 ;
+
+    box-shadow: inset -2px -2px 0 #e0e0e0, /* relieve claro arriba-izq */
+                inset  2px  2px 0 #000;    /* relieve oscuro abajo-der */
+
+}
+
+    .boton-de-busqueda:active{
+        outline: none;
+        background: #fff;   
+    }
+
+
+
+
+/* ESTILO DE LAS TARJETAS DE RES */
+.tarjeta-res-busqueda{ 
+    user-select: none ;
+
+    display: flex ;
+    flex-direction: column ;
+
+
+    height: 230px ;
+    width: 200px ;
+
+    box-shadow: -3px -3px 0 #fff, 3px 3px 0 #000;
+    background: #c0c0c0 ;
+}
+
+.tarjeta-res-busqueda img{
+    user-select: none ;
+
+    height: 200px ;
+    width: 100% ;
+
+    object-fit: cover ;
+}
+
+.footer-tarjeta-res{
+    /* border: 2px solid red ; */
+    background: #333333 ;
+
+    height: 50px ;
+    width: 100% ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+
+    gap: 15px ; 
+
+}
+
+.footer-tarjeta-res a{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    background: none ;
+}
+
+.footer-tarjeta-res a img{
+    height: 20px ;
+    width: 100% ;
+    background: none ;
+}
